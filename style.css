@@ -106,7 +106,36 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    gap: 10px;
+}
+.contact_map{
+    width: 300px;
+    height: auto;
+}
+.contact_form{
+    width: 300px;
+    height: auto;
+}
+.contact_form>form>label{
+    padding: 10px;
+}
+.contact_form>form>label>input{
+    width: 300px;
+    height: 30px;
+    margin: 0 !important;
+}
+.contact_form>form>textarea{
+    width: 300px;
+    height: 30px;
+    margin: 0 !important;
+}
+.contact_form>form>button{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    color: white;
+    background-color: brown;
+    border: none;
 }
 footer{
     background: brown;
