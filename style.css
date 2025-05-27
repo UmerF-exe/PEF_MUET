@@ -7,6 +7,9 @@ body {
     padding: 0;
     margin: 0; 
 }
+.t-icon{
+   color: brown !important;
+}
 .links>ul>li>a{
     color: brown !important;
     font-size: 23px !important;
@@ -148,4 +151,12 @@ footer{
     color: white;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Media Queris */
+
+@media only screen and (max-width: 768px){    
+    .img-hidden{
+        display: none;
+    }
 }
