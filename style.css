@@ -82,6 +82,23 @@ body {
     margin: 0 !important;
     margin-bottom: 5% !important;
 }
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+}
+.gallery_img{
+    width: 300px;
+    height: auto;
+}
+.gallery_img>img{
+    width: 100%;
+    height: 250px;
+}
 footer{
     background: brown;
     color: white;
