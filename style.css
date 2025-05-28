@@ -108,13 +108,21 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
     gap: 10px;
     margin-bottom: 5%;
 }
 .contact_map{
     width: 400px;
     height: auto;
+}
+.contact_map>iframe{
+    width: 90%;
+    height: 370px;
 }
 .contact_form{
     width: 450px;
@@ -152,11 +160,42 @@ footer{
     text-align: center;
     padding: 1rem 0;
 }
+.icons>img{
+    width: 55px;
+    height: 55px;
+}
 
 /* Media Queris */
 
 @media only screen and (max-width: 768px){    
     .img-hidden{
         display: none;
+    }
+}
+@media only screen and (max-width: 460px){
+    .company_img{
+        width: 200px;
+    }
+    .contact{
+        display: block;
+    }
+    .contact_map{
+        width: 350px;
+    }
+    .contact_form{
+        width: 320px;
+    }
+    .contact_form>form>label>input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .contact_form>form>button{
+        width: 300px;
+    }
+    .icons>img{
+        width: 40px;
+        height: 40px;
     }
 }
