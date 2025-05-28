@@ -108,7 +108,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
     margin-bottom: 5%;
 }
