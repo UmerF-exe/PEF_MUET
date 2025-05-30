@@ -21,7 +21,7 @@ body {
 .company_heading{
     width: 100%;  
     text-align: center;  
-    margin: 5% 0%;
+    margin: 20px 0px;
 }
 .company_heading>h1{
     color: brown;
@@ -85,6 +85,45 @@ body {
     line-height: 20px;
     margin: 0 !important;
     margin-bottom: 5% !important;
+}
+.blog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.blog1{
+    width: 300px;
+    height: auto;
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px #777777;
+    border-radius: 5px;
+}
+.blog1>img{
+    width: 100%;
+    height: auto;
+}
+.blog1>h2{
+    font-size: 25px;
+}
+.blog1>p{
+    font-weight: lighter;
+    text-align: justify;
+}
+.blog1>button{
+    border: 2px solid brown;
+    border-radius: 8px;
+    color: white;
+    background-color: brown;
+    padding: 12px;
+    margin: 10px 0px;
+}
+.blog1>button:hover{
+    color: brown;
+    background-color: white;
 }
 .gallery{
     display: flex;
