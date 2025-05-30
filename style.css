@@ -173,17 +173,17 @@ body {
     padding: 10px;
 }
 .contact_form>form>label>input{
-    width: 350px;
+    width: 165%;
     height: 30px;
     margin: 0 !important;
     border: none;
 }
 textarea{
     border: none;
-    width: 350px;
+    width: 100%;
 }
 .contact_form>form>button{
-    width: 350px;
+    width: 95%;
     height: 30px;
     margin-left: 10px;
     color: white;
