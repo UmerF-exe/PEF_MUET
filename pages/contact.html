@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../boot.css" />
+    <style>
+      .contain{
+        position: relative;
+      }
+      .c-item{
+        width: 100%;
+        height: auto;
+      }
+      .c-item>img{
+        width: 100%;
+        height: 500px;
+      }
+      .layer{
+        width: 98%;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+      }
+      .c-text{
+        position: absolute;
+        bottom: 40%;
+        left: 30%;
+        right: 30%;
+        text-align: center;
+      }
+      .c-text>h1{
+        color: #fff;
+      }
+      .c-text>p{
+        color: #fff;
+        font-size: 18px;
+      }
+      .lorem{
+        font-size: 20px;
+      }
+      .subscribe{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 30px;
+      }
+      .contact-email>form>label{
+        font-size: 25px !important;
+      }
+      .contact-email>form>label>input{
+        height: 50px !important;
+        margin: 10px;
+      }
+      @media only screen and (max-width: 1000px){
+        .c-item>img{
+          height: 400px;
+        }
+        .layer{
+          width: 97%;
+          height: 400px;
+        }
+        .c-text{
+          position: absolute;
+          bottom: 35%;
+        }
+      }
+      @media only screen and (max-width: 770px){
+        .c-item>img{
+          height: 350px;
+        }
+        .layer{
+          width: 96%;
+          height: 350px;
+        }
+        .c-text{
+          position: absolute;
+          bottom: 30%;
+        }
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -41,36 +120,14 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../Images/slider.jpg" width="" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/slider_1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/slider_2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/slider_3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/slider_4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/slider_6.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="container contain">
+      <div class="c-item">
+        <img src="../Images/slider_1.jpg" alt="">
+      </div>
+      <div class="layer"></div>
+      <div class="c-text">
+        <h1>Contact Us</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adip</p>
       </div>
     </div>
     <div class="container">
@@ -91,6 +148,26 @@
             </label>
             <label>Message: <br />
               <textarea name="Message" rows="5" cols="35" required></textarea>
+            </label>
+            <br />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="company_heading">
+        <h1>GET IN TOUCH</h1>
+        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+      </div>
+      <div class="subscribe">
+        <div class="subs-text">
+          <p class="lorem">Sign up to stay up to date with latest updates</p>
+        </div>
+        <div class="contact_form contact-email">
+          <form action="POST">
+            <label>Email: <br />
+              <input type="email" name="Email" required>
             </label>
             <br />
             <button>Submit</button>
