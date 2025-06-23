@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../boot.css" />
     <style>
-        .contain{
+      .contain{
         position: relative;
       }
       .c-item{
@@ -39,6 +39,18 @@
         color: #fff;
         font-size: 18px;
       }
+      .comapny_text>button{
+        border: 2px solid brown;
+        border-radius: 8px;
+        color: white;
+        background-color: brown;
+        padding: 10px;
+        margin: 10px 0px;
+      }
+      .comapny_text>button:hover{
+        color: brown;
+        background-color: white;
+      }
       @media only screen and (max-width: 1000px){
         .c-item>img{
           height: 400px;
@@ -50,6 +62,11 @@
         .c-text{
           position: absolute;
           bottom: 35%;
+        }
+        .vision{
+          display: flex;
+          flex-direction: column-reverse;
+          flex-wrap: wrap;
         }
       }
       @media only screen and (max-width: 770px){
@@ -111,7 +128,52 @@
         <p>Lorem, ipsum dolor sit amet consectetur adip</p>
       </div>
     </div>
-    
+    <div class="container" style="margin-bottom: 30px;">
+      <div class="company_heading">
+        <h1>Our Recent Events</h1>
+        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat dolores nihil voluptatum quis expedita optio a rerum quibusdam? Quo, explicabo. Voluptatum doloremque, eum similique nulla earum odio tempore suscipit dignissimos.</p>
+      </div>
+      <div class="company">
+        <div class="company_img story">
+          <img src="../Images/drilling_technology.jpg" alt="">
+        </div>
+        <div class="comapny_text">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error accusantium animi saepe molestias aperiam provident eligendi, exercitationem voluptatum sequi, eos voluptatem fugit nesciunt, laborum labore obcaecati sunt dignissimos dolor non?</p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-bottom: 30px;">
+      <div class="company vision">
+        <div class="comapny_text">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error accusantium animi saepe molestias aperiam provident eligendi, exercitationem voluptatum sequi, eos voluptatem fugit nesciunt, laborum labore obcaecati sunt dignissimos dolor non?</p>
+          <button>Read More</button>
+        </div>
+        <div class="company_img story">
+          <img src="../Images/oath_ceremony.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-bottom: 30px;">
+      <div class="company">
+        <div class="company_img story">
+          <img src="../Images/orientation.jpg" alt="">
+        </div>
+        <div class="comapny_text">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error accusantium animi saepe molestias aperiam provident eligendi, exercitationem voluptatum sequi, eos voluptatem fugit nesciunt, laborum labore obcaecati sunt dignissimos dolor non?</p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="icons">
+        <h1>Connect with us:</h1>
+        <img src="../icons/fb.png" alt="">
+        <img src="../icons/insta.png" alt="">
+        <img src="../icons/x.png" alt="">
+      </div>
+      <p>&copy; 2025 Pakistan Engineers Forum, MUET Chapter. Developed by Umer Farooque.</p>
+    </footer>
     <script src="../script.js"></script>
 </body>
 </html>
